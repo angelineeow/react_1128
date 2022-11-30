@@ -9,27 +9,35 @@
 </head>
 
 <body>
-    <form action="/my-handling-form-page" method="post">
+    <form>
         <h2>Sign up</h2>
         <ul>
             <li>
-                <input type="text" id="fname" name="fname" placeholder="First Name"/> 
-                <input type="text" id="lname" name="lname" placeholder="Last Name"/>
+                <input type="text" id="fname" name="fname" placeholder="First Name"> 
+                <input type="text" id="lname" name="lname" placeholder="Last Name">
             </li>
 
-            <li><input type="text" id="mobileNum" name="mobileNum" placeholder="Mobile No."/></li>
-            <li><input type="text" id="email" name="email" placeholder="Email Address"/></li>
+            <li><input type="text" id="mobileNum" name="mobileNum" placeholder="Mobile No."></li>
+            <li><input type="text" id="email" name="email" placeholder="Email Address"></li>
             
             <li>
-                <input type="text" id="pass" name="pass" placeholder="Password"/>
-                <input type="text" id="confirmPass" name="confirmPass" placeholder="Confirm Password"/>
+                <input type="text" id="pass" name="pass" placeholder="Password">
+                <input type="text" id="confirmPass" name="confirmPass" placeholder="Confirm Password">
             </li>
 
-            <div>
-                <label for="agree">
-                    <input type="checkbox" id="agree" name="agree"/> I Agree
+            <li>
+                <label for="agree" class="left"> 
+                    <input type="checkbox" id="agree" name="agree">I Agree
+                    <label for="agree" class="right">
+                        By clicking <span class="button">Register</span>, you agree to the <span class="highlight">Terms and Conditions</span> set <br>out by this site, including our Cookie Use.
+                    </label>
                 </label>
-            </div>
+            </li>
+
+            <li>
+                <button type="register" class="register" href="/">Register</button>
+                <button type="signin" class="signin" href="/">Sign In</button>
+            </li>
         </ul>
 
     </form>
