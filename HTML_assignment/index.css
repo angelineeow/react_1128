@@ -38,7 +38,8 @@ input {
 
 input[type="tel"], input[type="email"] {
     width: 85%;
-  }
+}
+
 
 a {
     text-decoration: none;
@@ -51,7 +52,8 @@ a {
 }
 
 label.left{
-    margin: 8px; 
+    margin-left: 18px;
+    margin-top: 8px;
     display: block;
     float: left;
     font-size: 12px;
