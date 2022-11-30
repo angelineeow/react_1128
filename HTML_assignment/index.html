@@ -12,32 +12,37 @@
     <form>
         <h2>Sign up</h2>
         <ul>
-            <li>
-                <input type="text" id="fname" name="fname" placeholder="First Name"> 
-                <input type="text" id="lname" name="lname" placeholder="Last Name">
+            <li class="space_between">
+                <input type="text" id="fname" placeholder="First Name"/> 
+                <input type="text" id="lname" placeholder="Last Name"/>
             </li>
 
-            <li><input type="text" id="mobileNum" name="mobileNum" placeholder="Mobile No."></li>
-            <li><input type="text" id="email" name="email" placeholder="Email Address"></li>
+            <li class="column">
+                <input type="text" id="mobileNum" placeholder="Mobile No."/>
+            </li>
+
+            <li class="column">
+                <input type="text" id="email" placeholder="Email Address"/>
+            </li>
+
+            <li class="space_between">
+                <input type="text" id="pass" placeholder="Password"/>
+                <input type="text" id="confirmPass" placeholder="Confirm Password"/>
+            </li>
             
-            <li>
-                <input type="text" id="pass" name="pass" placeholder="Password">
-                <input type="text" id="confirmPass" name="confirmPass" placeholder="Confirm Password">
-            </li>
-
-            <li>
+            <li class="space_between">
                 <label for="agree" class="left"> 
-                    <input type="checkbox" id="agree" name="agree">I Agree
-                    <label for="agree" class="right">
-                        By clicking <span class="button">Register</span>, you agree to the <span class="highlight">Terms and Conditions</span> set <br>out by this site, including our Cookie Use.
-                    </label>
+                    <input type="checkbox" id="agree"/>I Agree
+                </label>
+    
+                <label for="agree" class="right">
+                    By clicking <span class="smallButton">Register</span>, you agree to the <a href="/" target="_blank">Terms and Conditions</a> set out by this site, including our Cookie Use.
                 </label>
             </li>
 
-            <li>
-                <button type="register" class="register" href="/">Register</button>
-                <button type="signin" class="signin" href="/">Sign In</button>
-            </li>
+            <button type="register" id="register" href="/">Register</button>
+            <button type="signin" id="signin" href="/">Sign In</button>
+
         </ul>
 
     </form>

@@ -2,18 +2,6 @@
     font-family: Arial;
 }
 
-form {
-    /* Center the form on the page */
-    margin: 0 auto;
-    width: 400px;
-
-    /* Form outline */
-    padding: 5px;
-    border: 1px solid #ccc;
-
-    text-align: center;
-}
-
 h2 {
     padding: 10px;
     margin-bottom: 0;
@@ -21,18 +9,27 @@ h2 {
     font-weight: lighter;
 }
 
-input[type=text] {
-    padding: 8px 12px;
-    margin: 8px;
-    margin-top: 3px;
-    display: inline-block;
+form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 400px;
+
+    /* Form outline */
+    padding: 15px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-input[type=text]:focus {
-    border: 3px lightblue;
+input[type=text] {
+    padding: 8px 12px;
+    margin: 8px auto;
+    margin-top: 3px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 ul {
@@ -41,22 +38,35 @@ ul {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+.space_between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.column{
+    display: flex;
+    justify-content: column;
+}
+
 label.left{
-    display: block;
-    margin: 8px 15px;
-    text-align: left;
+    margin: 8px; 
+    float: left;
     font-size: 12px;
     font-weight: bolder;
 }
 
 label.right{
-    display: block;
     float: right;
+    width: 280px;
     font-size: x-small;
     font-weight: lighter;
 }
 
-button, span.button{
+button, span.smallButton{
     background-color: dodgerblue;
     border: none;
     color: white;
@@ -68,19 +78,14 @@ button, span.button{
     border-radius: 4px;
 }
 
-span.highlight{
-    color: dodgerblue;
-}
-
-.register {
-    margin-top: 10px;
+#register {
     background-color: dodgerblue;
     padding: 10px 60px;
     margin: 12px;
 }
 
-.signin {
-    margin-top: 10px;
+#signin {
     background-color: #4CAF50;
-    padding: 10px 70px;
+    padding: 10px 60px;
+    margin: 12px;
 }
