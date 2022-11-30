@@ -28,13 +28,17 @@ ul {
     margin: 0;
 }
 
-input[type=text] {
+input {
     padding: 8px 12px;
     margin: 8px auto;
     margin-top: 3px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+
+input[type="tel"], input[type="email"] {
+    width: 85%;
+  }
 
 a {
     text-decoration: none;
@@ -44,10 +48,6 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.column{
-    display: block;
 }
 
 label.left{
