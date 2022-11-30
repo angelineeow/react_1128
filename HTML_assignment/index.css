@@ -63,6 +63,7 @@ label.left{
 label.right{
     float: right;
     text-align: left;
+    margin-right: 15px;
     width: 280px;
     font-size: x-small;
     font-weight: lighter;
@@ -73,7 +74,8 @@ button, span.smallButton{
     border: none;
     color: white;
     display:inline-block;
-    padding: 5px;
+    padding: 3px 3px;
+    margin: 3px;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
