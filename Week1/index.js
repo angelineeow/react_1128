@@ -282,24 +282,24 @@ function foo(){
   console.log("hello world")
 } */
 
-/* var foo;
+var foo;
 foo?.();
 foo = () => {
   console.log("hello world");
-}; */
+}; 
 
 //rest operator: is the syntax that takes all argument and put them to an array
 
 
-function foo(){
-    console.log(arguments);
-    console.log(arguments.forEach())
-    for (let i = 0; i < arguments.length; i++) {
-      console.log(arguments[i])
-    }
-  }
+// function foo(){
+//     console.log(arguments);
+//     console.log(arguments.forEach())
+//     for (let i = 0; i < arguments.length; i++) {
+//       console.log(arguments[i])
+//     }
+//   }
   
-  foo(1,2,3,4,5)
+//   foo(1,2,3,4,5)
   
   /* function foo(...args) {
     console.log(args);
