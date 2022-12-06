@@ -41,7 +41,7 @@ function alphabetical_order(str){
     return str.split("").sort().join("");
 }
 
-console.log(alphabetical_order("abeemrstw"));
+console.log(alphabetical_order("webmaster"));
 
 /* 5. Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word of the string in upper case. */
 
@@ -51,7 +51,7 @@ function capitalize_each_word(str){
     for(const element of array_strings){
         new_array.push(element.charAt(0).toUpperCase() + element.substr(1));
     }
-    return new_array;
+    return new_array.join(" ");
 }
 
 console.log(capitalize_each_word("the quick brown fox"));
@@ -100,6 +100,12 @@ console.log(is_prime(10));
 function type_arg(argument){
     return typeof(argument);
 }
+
+console.log(type_arg(1));
+console.log(type_arg(true));
+console.log(type_arg({}));
+console.log(type_arg("hello"));
+console.log(type_arg(undefined));
 
 /* 10. Write a JavaScript function which returns the n rows by n columns identity matrix. */
 
@@ -418,8 +424,8 @@ person("Rachel", sayHello);
 
 /* 29. Write a JavaScript function to get the function name. */
 
-function teddy() { 
+function funcName() { 
     console.log(arguments.callee.name);
 }
   
-teddy();
+funcName();
