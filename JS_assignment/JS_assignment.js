@@ -420,6 +420,6 @@ person("Rachel", sayHello);
 
 function teddy() { 
     console.log(arguments.callee.name);
-  }
+}
   
-teddy()
+teddy();
