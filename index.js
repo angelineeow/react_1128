@@ -16,4 +16,4 @@ function myFetch(url){
 
 myFetch("https://jsonplaceolder.typicode.com/posts")
   .then((response) => console.log(response))
-  .catch((error) => console.error(error));
+  .catch((err) => console.error(err));
