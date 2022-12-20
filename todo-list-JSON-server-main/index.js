@@ -119,7 +119,7 @@ const ViewModel = ((View, Model) => {
             Model.addTodo(newTodo)
                 .then((res) => {
                     state.todos = [res, ...state.todos];
-                    event.target[0].value = ""
+                    event.target[0].value = "";
                 })
                 .catch((err) => {
                     alert(`add new task failed: ${err}`);
