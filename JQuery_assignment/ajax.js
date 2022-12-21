@@ -14,7 +14,7 @@ $.myAjax = function (settings){
     xhr.onerror = () => {
         settings.error(xhr.response);
     }
-    xhr.send()
+    xhr.send();
 }
 
 // success case
