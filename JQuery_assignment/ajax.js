@@ -3,7 +3,7 @@
 // Bundler is a tool that combines multiple JavaScript code files into a single JavaScript code file that can be executed in browser.
 // Transpiler is a translator that translates a programming language to another programming language. For instance, we can use Babel which is a transpiler to translate ECMAScript 2015+ code to older version that is compatible to browsers and environments.
   
-// Basic: Get an object with properties including url, data, and success. 
+// Basic: Get an object with properties including url, data, success and error.
 $.myAjax = function (settings){
     let xhr = new XMLHttpRequest();
     xhr.open(settings.method, settings.url);
